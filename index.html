@@ -73,6 +73,7 @@
                 return getPin();
             }
         }
+        //display digits in calculator
         const digitContainer = document.getElementById('digit-container');
         digitContainer.addEventListener('click',function(event){
                 const digit = event.target.innerText;
@@ -86,9 +87,23 @@
                 else{
                     const typedInput = document.getElementById('typedInput');
                     typedInput.value = typedInput.value + digit;
-
                 }
         })
+        //match the 2 displays output
+        const submitButton = document.getElementById('submitBtn');
+        submitButton.addEventListener('click',function(){
+            pinMatched();
+        })
+        
+        function pinMatched(){
+            const pinInput =  document.getElementById('pin-input').value;
+
+            const typedInput = document.getElementById('typedInput').value;
+
+            if(pinInput ===  typedInput){
+                console.log('pin matched');
+            }
+        }
     </script>
 </body>
 </html>
