@@ -79,7 +79,9 @@
                 if(isNaN(digit)){
                     //return backspace
                     //return clear
-                    console.log(digit);
+                    const typedInput = document.getElementById('typedInput');
+                    typedInput.value = 0;
+                    typedInput.value='';
                 }
                 else{
                     const typedInput = document.getElementById('typedInput');
