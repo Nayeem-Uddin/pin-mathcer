@@ -101,22 +101,34 @@
             const typedInput = document.getElementById('typedInput').value;
 
             if(pinInput ===  typedInput){
-                const correct = document.getElementById('pin-match')
-                correct.style.display = 'block';
-                const incorrect =document.getElementById('pin-didnot-match');
-                incorrect.style.display = 'none';
+                document.getElementById('pin-match').style.display = 'block';
+                document.getElementById('pin-didnot-match').style.display = 'none';
             }
             else{
           
-                const correct = document.getElementById('pin-didnot-match')
-                correct.style.display = 'block';
-                const incorrect =document.getElementById('pin-match');
-                incorrect.style.display = 'none';
-            }
-            function pinMatcherDisplay(correc){
-
+                document.getElementById('pin-didnot-match').style.display = 'block';
+                document.getElementById('pin-match').style.display = 'none';
             }
         }
+        //functional display result
+       // if(pinInput ===  typedInput){
+           // pinMatcherDisplay('block','none')
+       // }
+       // else{
+        //    pinMatcherDisplay('none','block')
+        //}
+        //function pinMatcherDisplay(correctStatus,incorrectStatus){
+            //const correct = document.getElementById('pin-match')
+            //correct.style.display = correctStatus;
+           // const incorrect =document.getElementById('pin-didnot-match');
+            //incorrect.style.display = incorrectStatus;
+        
     </script>
+
+        
 </body>
+
+    
 </html>
+
+        
